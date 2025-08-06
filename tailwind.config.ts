@@ -52,6 +52,18 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				teal: {
+					DEFAULT: 'hsl(var(--teal))',
+					foreground: 'hsl(var(--teal-foreground))'
+				},
+				sage: {
+					DEFAULT: 'hsl(var(--sage))',
+					foreground: 'hsl(var(--sage-foreground))'
+				},
+				forest: {
+					DEFAULT: 'hsl(var(--forest))',
+					foreground: 'hsl(var(--forest-foreground))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
