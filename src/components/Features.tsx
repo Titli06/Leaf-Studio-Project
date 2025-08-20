@@ -26,18 +26,18 @@ const Features = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-sage/5 to-background">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16 space-y-4">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+    <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-sage/5 to-background">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12 lg:mb-16 space-y-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight">
             Why Choose <span className="text-primary">123ID0892</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
             We're committed to providing exceptional quality and service for your botanical journey.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {features.map((feature, index) => {
             const Icon = feature.icon;
             return (
@@ -46,12 +46,12 @@ const Features = () => {
                 className="text-center border-0 bg-white/60 backdrop-blur-sm hover:bg-white/80 transition-all duration-300 group slide-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <CardContent className="p-8 space-y-4">
-                  <div className="mx-auto w-16 h-16 bg-gradient-to-br from-primary to-teal rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <Icon className="h-8 w-8 text-white" />
+                <CardContent className="p-6 lg:p-8 space-y-4">
+                  <div className="mx-auto w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-primary to-teal rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <Icon className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-semibold">{feature.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <h3 className="text-lg sm:text-xl font-semibold">{feature.title}</h3>
+                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                     {feature.description}
                   </p>
                 </CardContent>

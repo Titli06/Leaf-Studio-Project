@@ -42,18 +42,18 @@ const FeaturedProducts = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-background to-accent/10">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16 space-y-4">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+    <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-background to-accent/10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12 lg:mb-16 space-y-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight">
             Featured <span className="text-primary">Collections</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
             Handpicked selections for the modern plant enthusiast. Each collection is carefully curated for optimal growth and wellness.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {products.map((product, index) => (
             <Card 
               key={product.id} 
@@ -61,11 +61,11 @@ const FeaturedProducts = () => {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardContent className="p-0">
-                <div className="relative overflow-hidden rounded-t-lg">
+                  <div className="relative overflow-hidden rounded-t-lg">
                   <img
                     src={product.image}
                     alt={product.name}
-                    className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                    className="w-full h-48 sm:h-56 lg:h-64 object-cover transition-transform duration-300 group-hover:scale-105"
                   />
                   <div className="absolute top-4 left-4">
                     <Badge 
@@ -84,9 +84,9 @@ const FeaturedProducts = () => {
                   </Button>
                 </div>
 
-                <div className="p-6 space-y-4">
+                <div className="p-4 sm:p-6 space-y-4">
                   <div>
-                    <h3 className="font-semibold text-lg mb-1">{product.name}</h3>
+                    <h3 className="font-semibold text-base sm:text-lg mb-1">{product.name}</h3>
                     <p className="text-sm text-muted-foreground">{product.description}</p>
                   </div>
 
@@ -100,9 +100,9 @@ const FeaturedProducts = () => {
                     </span>
                   </div>
 
-                  <div className="flex items-center justify-between">
+                  <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
                     <div className="flex items-center space-x-2">
-                      <span className="text-2xl font-bold text-primary">
+                      <span className="text-xl sm:text-2xl font-bold text-primary">
                         ${product.price}
                       </span>
                       {product.originalPrice && (
@@ -113,10 +113,11 @@ const FeaturedProducts = () => {
                     </div>
                     <Button 
                       size="sm"
-                      className="bg-gradient-to-r from-primary to-teal hover:from-primary/90 hover:to-teal/90 text-white shadow-md hover:shadow-lg transition-all duration-300"
+                      className="bg-gradient-to-r from-primary to-teal hover:from-primary/90 hover:to-teal/90 text-white shadow-md hover:shadow-lg transition-all duration-300 w-full sm:w-auto"
                     >
                       <ShoppingCart className="h-4 w-4 mr-2" />
-                      Add to Cart
+                      <span className="hidden sm:inline">Add to Cart</span>
+                      <span className="sm:hidden">Add</span>
                     </Button>
                   </div>
                 </div>

@@ -14,28 +14,28 @@ const Newsletter = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-br from-primary/5 to-teal/5 relative overflow-hidden">
+    <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-primary/5 to-teal/5 relative overflow-hidden">
       {/* Background Elements */}
-      <div className="absolute top-10 left-10 opacity-10">
-        <Leaf className="h-24 w-24 text-primary float-gentle" />
+      <div className="absolute top-6 sm:top-10 left-4 sm:left-10 opacity-10">
+        <Leaf className="h-12 w-12 sm:h-20 lg:h-24 text-primary float-gentle" />
       </div>
-      <div className="absolute bottom-10 right-10 opacity-10">
-        <Leaf className="h-32 w-32 text-teal float-delayed" />
+      <div className="absolute bottom-6 sm:bottom-10 right-4 sm:right-10 opacity-10">
+        <Leaf className="h-16 w-16 sm:h-24 lg:h-32 text-teal float-delayed" />
       </div>
-      <div className="absolute top-1/2 left-1/4 opacity-5">
-        <Leaf className="h-40 w-40 text-sage float-gentle" />
+      <div className="hidden lg:block absolute top-1/2 left-1/4 opacity-5">
+        <Leaf className="h-32 w-32 lg:h-40 text-sage float-gentle" />
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-2xl mx-auto text-center space-y-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="max-w-2xl mx-auto text-center space-y-6 lg:space-y-8">
           <div className="space-y-4">
-            <div className="mx-auto w-16 h-16 bg-gradient-to-br from-primary to-teal rounded-full flex items-center justify-center mb-6">
-              <Mail className="h-8 w-8 text-white" />
+            <div className="mx-auto w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-primary to-teal rounded-full flex items-center justify-center mb-4 sm:mb-6">
+              <Mail className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight">
               Stay <span className="text-primary">Connected</span>
             </h2>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-base sm:text-lg text-muted-foreground">
               Get exclusive access to new arrivals, care tips, and special offers. 
               Join our community of plant enthusiasts.
             </p>
@@ -58,7 +58,7 @@ const Newsletter = () => {
             </Button>
           </form>
 
-          <div className="flex items-center justify-center space-x-8 text-sm text-muted-foreground">
+          <div className="flex flex-col sm:flex-row items-center justify-center space-y-2 sm:space-y-0 sm:space-x-6 lg:space-x-8 text-sm text-muted-foreground">
             <div className="flex items-center space-x-2">
               <div className="h-2 w-2 rounded-full bg-teal pulse-soft" />
               <span>Weekly Tips</span>
