@@ -132,7 +132,10 @@ const Checkout = () => {
                     <div className="flex items-center space-x-3 p-4 border rounded-lg hover:bg-accent/5 cursor-pointer">
                       <RadioGroupItem value="paypal" id="paypal" />
                       <Label htmlFor="paypal" className="flex items-center gap-3 cursor-pointer flex-1">
-                        <Wallet className="h-5 w-5 text-primary" />
+                        <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none">
+                          <path d="M20.067 8.478c.492 3.157-.98 5.466-4.434 6.553l-.638.2-1.512 5.969H11.19l-1.512-5.969-.638-.2c-3.454-1.087-4.926-3.396-4.434-6.553.492-3.157 2.955-5.478 6.409-5.478h3.51c3.454 0 5.05 2.321 5.542 5.478z" fill="#003087"/>
+                          <path d="M17.82 10.647c-.443 1.785-1.89 2.872-4.073 3.063l-.456.032-1.1 4.327h-1.905l1.1-4.327-.456-.032c-2.183-.191-3.63-1.278-4.073-3.063-.443-1.784.54-3.063 2.723-3.063h4.517c2.183 0 3.166 1.279 2.723 3.063z" fill="#0070E0"/>
+                        </svg>
                         <div>
                           <p className="font-medium">PayPal</p>
                           <p className="text-sm text-muted-foreground">Pay securely with PayPal</p>
@@ -154,7 +157,11 @@ const Checkout = () => {
                     <div className="flex items-center space-x-3 p-4 border rounded-lg hover:bg-accent/5 cursor-pointer">
                       <RadioGroupItem value="gpay" id="gpay" />
                       <Label htmlFor="gpay" className="flex items-center gap-3 cursor-pointer flex-1">
-                        <Smartphone className="h-5 w-5 text-primary" />
+                        <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none">
+                          <path d="M12 2.25c5.385 0 9.75 4.365 9.75 9.75s-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12 6.615 2.25 12 2.25z" fill="#fff"/>
+                          <path d="M12 2.5c5.247 0 9.5 4.253 9.5 9.5s-4.253 9.5-9.5 9.5S2.5 17.247 2.5 12 6.753 2.5 12 2.5z" stroke="#5F6368" strokeWidth="0.5"/>
+                          <path d="M11.368 12.75v3.375h-.75v-8.25h2.812c.563 0 1.063.188 1.5.563.438.375.656.844.656 1.406 0 .563-.218 1.031-.656 1.406-.437.375-.937.563-1.5.563h-2.062zm0-3.75v3h2.062c.313 0 .594-.11.844-.328.25-.219.375-.485.375-.797 0-.313-.125-.578-.375-.797-.25-.219-.531-.328-.844-.328h-2.062z" fill="#4285F4"/>
+                        </svg>
                         <div>
                           <p className="font-medium">Google Pay</p>
                           <p className="text-sm text-muted-foreground">Fast checkout with Google Pay</p>
