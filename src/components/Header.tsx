@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ShoppingCart, Search, Menu } from "lucide-react";
+import { ShoppingCart, Search, Menu, Leaf } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useCart } from "@/contexts/CartContext";
@@ -14,9 +14,9 @@ const Header = () => {
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-2">
           <div className="h-7 w-7 sm:h-8 sm:w-8 rounded-full bg-gradient-to-br from-primary to-teal flex items-center justify-center">
-            <span className="text-xs font-bold text-white">123</span>
+            <Leaf className="h-4 w-4 text-white" />
           </div>
-          <span className="text-lg sm:text-xl font-bold tracking-tight">123ID0892</span>
+          <span className="text-lg sm:text-xl font-bold tracking-tight">GoGreen</span>
         </Link>
 
         {/* Desktop Navigation */}
